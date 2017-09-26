@@ -16,7 +16,9 @@ import modelo.ProcesarCadena;
 public class Aplicacion {
 
 	
-	
+	/**
+	 *  Inicializa los objetos de las clases Numero y ProcesarCadena, además procede a la ejecución del programa
+	 */
 	public void empezarAplicacion() {
 		
 		Numero num = new Numero();

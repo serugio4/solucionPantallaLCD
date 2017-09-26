@@ -41,6 +41,19 @@ public class ProcesarCadena {
 			throw new NumberFormatException("los datos ingresados deben ser numéricos");
 		}
 		
+		if (Integer.parseInt(parametros[0])<1 || Integer.parseInt(parametros[1])<0) {
+			throw new NumberFormatException("el tamaño debe estar entre 1 y 9 y la cadena a imprimir debe ser positiva");
+		}
+		
+		if (Integer.parseInt(parametros[0])>9 ) {
+			throw new NumberFormatException("el tamaño debe estar entre 1 y 9");
+		}
+		
+		if (parametros[1].length()>2147483647) {
+			throw new NumberFormatException("el tamaño de la cadena a imprimir es demasiado grande");
+		}
+	
+		
 		return parametros;
 
 	}

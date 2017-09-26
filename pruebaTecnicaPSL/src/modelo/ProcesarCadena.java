@@ -88,7 +88,7 @@ public class ProcesarCadena {
 	 * 								      posición[1], contiene la cadena de números a imprimir 
 	 * 					
 	 */
-	public void imprimirCadenaDeNumeros(String[] parametros) {
+	public String[][] imprimirCadenaDeNumeros(String[] parametros) {
 		
 		int size = Integer.parseInt(parametros[0]);
 		String numero = parametros[1];
@@ -278,7 +278,7 @@ public class ProcesarCadena {
 			}
 			System.out.println("");
 		}
-
+		return matrizNumero;
 	}
 
 }

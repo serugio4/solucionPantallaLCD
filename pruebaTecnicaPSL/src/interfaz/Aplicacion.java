@@ -1,5 +1,6 @@
 package interfaz;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import modelo.Numero;
@@ -26,6 +27,10 @@ public class Aplicacion {
 		String cadenaTeclado;
 		Scanner entrada = new Scanner(System.in);
 		
+		
+		
+		ArrayList<String> listaEntradas = new ArrayList<>();
+		
 		System.out.println("Aplicación de impresión de números en formato pantalla LCD \n"
 				+ "digite el primer valor (numero entre 1 y 9) para seleccionar el tamaño\n"
 				+ "enseguida digite una ','\n"
@@ -34,16 +39,39 @@ public class Aplicacion {
 				+ "digite 0,0 para salir" );
 		cadenaTeclado = entrada.nextLine();
 		
+		while (!cadenaTeclado.equals("0,0")) {
+			
+		listaEntradas.add(cadenaTeclado);
+		
+			System.out.println("Aplicación de impresión de números en formato pantalla LCD \n"
+					+ "digite el primer valor (numero entre 1 y 9) para seleccionar el tamaño\n"
+					+ "enseguida digite una ','\n"
+					+ "posteriormente digite la cadena de números que desea imprimir \n"
+					+ "Ejemplo: 1,3456\n"
+					+ "digite 0,0 para salir" );
+			cadenaTeclado = entrada.nextLine();
+		}
+		
+		
+		for (String string : listaEntradas) {
+		
+			proc.imprimirCadenaDeNumeros(proc.recibirCadena(string));
+		}
+			
+				
+			
+		
+		
+		
+		
+		
+		
+		
 				
 		while(!cadenaTeclado.equals("0,0")) {
 			
-			proc.imprimirCadenaDeNumeros(proc.recibirCadena(cadenaTeclado));
-		System.out.println("Aplicación de impresión de números en formato pantalla LCD \n"
-				+ "digite el primer valor (numero entre 1 y 9) para seleccionar el tamaño\n"
-				+ "enseguida digite una ','\n"
-				+ "posteriormente digite la cadena de números que desea imprimir \n"
-				+ "Ejemplo: 1,3456\n"
-				+ "digite 0,0 para salir" );
+			
+		
 		
 		
 		cadenaTeclado = entrada.nextLine();

@@ -7,6 +7,15 @@ import org.junit.Test;
 import interfaz.*;
 import modelo.*;
 
+/**
+ * Debido a que la mayoría de errores se pueden presentar en el ingreso de datos por parte del usuario
+ * las pruebas unitarias se concentran en el método encargado de recibir y validar que los paramétros 
+ * ingresados satisfagan las condiciones planteadas para el ejercicio.
+ * 
+ * @author serug
+ * @version 1.0
+ * 
+ */
 public class PruebaUnitaria {
 
 	ProcesarCadena proc;
@@ -19,13 +28,11 @@ public class PruebaUnitaria {
 		
 	}
 	
-	/*Tests de la clase ProcesarCadena
-	 * 
-	 * Debido a que la mayoría de errores se pueden presentar en el ingreso de datos por parte del usuario
-	 * las pruebas unitarias se concentran en el método encargado de recibir y validar que los paramétros 
-	 * ingresados satisfagan las condiciones planteadas para el ejercicio.
-	 * 
-	 * */ 
+	
+	  
+	  
+	  
+	 
 	
 	@Test
 	public void testProcesarCadenaSinComa() {
